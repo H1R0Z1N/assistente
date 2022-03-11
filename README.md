@@ -7,4 +7,4 @@
 - $ pkg intall git
 - $ git clone https://github.com/H1R0Z1N/assistente
 - $ cd assistente
-- $ python3 ast
+- $ python3 ast.hk
