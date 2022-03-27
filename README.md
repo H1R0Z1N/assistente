@@ -1,5 +1,5 @@
 # Assistente.py
-- estou desenvolvendo este bot para auxiliar novo programadore que estão iniciando na linguagem de programação em python
+- estou desenvolvendo este bot para auxiliar novos programadores que estão iniciando na linguagem de programação python
 # Modo de instalação
 - $ apt update
 - $ apt upgrade
