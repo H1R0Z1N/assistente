@@ -1,0 +1,135 @@
+# Supports python2 & python3
+# Nome : ass - Assistente De Códigos Simples De Python
+# Author: HIRO KAMI
+# Data: 24 de Mar 2021
+import os
+os.system ('clear')
+red = '\033[31m'
+yellow = '\033[93m'
+green = '\033[92m'
+clear = '\033[0m'
+bold = '\033[01m'
+cyan = '\033[96m'
+def banner():
+	print (r+"\n         ----------------------\n        | CONSULTAS CÓD PYTHON |\n         ----------------------                                       by: hiro kami\n")
+def banner2():
+	print (r+"\n              ----------------------\n             | CONSULTAS CÓD PYTHON |\n              ----------------------                                            by: hiro kami\n _   _ ___ ____   ___    _  __    _    __  __ ___\n| | | |_ _|  _ \ / _ \  | |/ /   / \  |  \/  |_ _|\n| |_| || || |_) | | | | | ' /   / _ \ | |\/| || |\n|  _  || ||  _ <| |_| | | . \  / ___ \| |  | || |\n|_| |_|___|_| \__\\___/  |_|\_\/_/   \_\_|  |_|___|\n\ninstagram: @jottah_hk\n__________________________________________________\n\n")
+c = clear+bold+cyan
+r = clear+bold+red
+g = clear+bold+green
+y = clear+bold+yellow
+def entrada ():		
+	global red
+	global yellow
+	global green
+	global clear
+	global bold
+	global cyan
+	global opc
+	print (c+"Olá sou seu assistente de programação como posso chama-lo?")
+	nome = input (g+"\nNOME: "+y)
+	nom = nome.upper ()
+	print ("")
+	os.system ('clear')
+	banner2 ()
+	print (c+"             SEJA BEM VINDO",nom)
+	print ("")
+	cont = 0
+	no = nome.lower ()
+	print (nome,"essas são minhas opções")
+	print (clear+red+"lembrando que as ferramentas mostradas aqui são da liguagem python!"+c)
+	print ("[01] Funções e Operadores \n[02] Sinais de Comparação e Matemáticos \n[03] Bibliotecas",r+"\n[00] Sair ")
+	opc = int (input (g+"Digite o numero da opção que vc esta procurando\n>>> "+y))
+def opção1 ():
+	os.system ('clear')
+	banner ()
+	print (y+"lista das funções:\n")
+	print (c+"[01] print\n[02] int\n[03] float\n[04] imput\n[05] if\n[06] elif\n[07] else\n[08] while\n[09] for i in range(inicio,!= fim,passos)\n[10] and, or, not\n[11] lista = [1,2,3,4,5]\n[12] import\n[13] from, as")
+	num = int (input (clear+bold+green+"\nDigite o numero da opção que vc esta procurando\n>>> "+y))
+	print (c)
+	print ("\n")
+	if 0 < num <= 13:
+		os.system ('clear')
+		if num == 1:
+			print ("#print\n")
+			print ("Objetivo: Imprimir no programa uma legenda\ntradução: imprimir\nmodo de execussão: print (' ')")
+		elif num == 2:
+			print ("#int\n")
+			print ("Objetivo: criar numeros inteiros\ntradução: int => inteiro \nmodo de execussão: int ('%f')"%999)
+		elif num == 3:
+			l = 1.50
+			print ("#float\n")
+			print ("Objetivo: criar numeros fracionados\ntradução: float => flutuador \nmodo de execussão: float ('%.2f')"%l)
+		elif num == 4:
+			print ("#imput\n")
+			print ("Objetivo: receber uma entrada do usuario\ntradução: imput => imputar\nmodo de uso: imput ()")
+		elif num == 5:
+			print ("#if\n")
+			print ("Objetivo: É uma ferramenta de decisões logicas \ntradução: if => e se \nmodo de uso: if 0 < 10:")
+		elif num == 6:
+			print ("#elif\n")
+			print ("Objetivo: É uma ferramenta de decisões logicas, mais quando lido não ler os proximos programas \ntradução: elif => sem tradução... \nmodo de uso: elif 0 < 10:")
+		elif num == 7:
+			print ("#else\n")
+			print ("Objetivo: Se á resposta do aperador logico for diferente de True ele será executado\ntradução: else => outro \nmodo de uso: else:")
+		elif num == 8:
+			print ("#while\n")
+			print ("Objetivo: criar um loop com decisões lógicas \ntradução: while => enquanto \nmodo de uso:\n\ncont = 0\nwhile cont < 10:\n  print (cont)\n  cont =+ 1")
+		elif num == 9:
+			print ("#for & range\n")
+			print ("Objetivo: \ntradução: => \nmodo de uso: ")
+		elif num == 10:
+			print ("#and, or, not\n")
+			print ("Objetivo: \ntradução: => \nmodo de uso: ")
+		elif num == 11:
+			print ("#listas\n")
+			print ("Objetivo: \ntradução: => \nmodo de uso: ")
+		elif num == 12:
+			print ("#import\n")
+			print ("Objetivo: \ntradução: => \nmodo de uso: ")
+		elif num == 13:
+			print ("#from, as\n")
+			print ("Objetivo: \ntradução: => \nmodo de uso: ")
+			
+def opção2 ():
+	os.system ('clear')
+	banner ()
+	print (y+" PARA QUE SERVE ESSAS FERRAMENTAS")
+	print (c+"\n(1)=>sinais comparação\n(2)=>sinais de matematica\n")
+	numero = int (input (g+"\nDigite o numero da opção que vc esta procurando\n>>>"+y))
+	if 0 < numero <= 2:
+		os.system ('clear')
+		if numero == 1:
+			print (c+"\n        =>SINAIS DE COMPARAÇÃO<=")
+			print ("\nEsses são os sinais: >,<,=,==,>=,<=,!=\n> maior\n< menor\n== igual\n>= maior/igual\n<= menor/igual\n!= diferente")
+		if numero == 2:
+			print (c+"\n        =>SINAIS DE METEMATICA<=")
+			print ("\nEsses são os sinais: +,-,/,//,*,**\n+ mais\n- menos\n/ igualdade\n// igual/inteiro\n* vezes\n**  potencia")
+	else:
+		global inv
+		print (r+"\n",inv)
+def opção3 ():
+	os.system('clear')
+	banner ()
+	print (y+"lista de livros da blibioteca python:\n")
+	print (c+"(01) math\n(02) random")
+	num_bibli = int (input (g+"\nDigite o número dá opção:\n>>> "+y))
+
+invalido = 'Programa finalizado'
+inv = invalido.upper ()
+
+def MainMenu():
+	os.system ('clear')
+	banner2 ()
+	entrada ()
+	print (cyan+bold)
+	if opc == 1:
+		opção1 ()
+	if opc == 2:
+		opção2 ()
+	if opc == 3:
+		opção3 ()
+	else:
+		print (r+"\n           ",inv,"\ninfor: digite 'python3 ast.hk' para voltar")
+
+MainMenu()
