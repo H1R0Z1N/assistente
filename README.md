@@ -3,8 +3,8 @@
 # Modo de instalação
 - $ apt update
 - $ apt upgrade
-- $ pkg intall python3
-- $ pkg intall git
+- $ pkg install python3
+- $ pkg install git
 - $ git clone https://github.com/H1R0Z1N/assistente
 - $ cd assistente
 - $ python3 ast.hk
